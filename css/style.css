@@ -96,7 +96,7 @@ nav a{
     to{color:#000;}
     
 }
-.grupos{
+.titulos-de-apartados{
     font-size: 50px;
     margin-top: 150px;
     text-align: center;
@@ -188,6 +188,42 @@ footer p{
 }
 .boton-enlace:hover{
     background-color: rgb(57, 228, 23);
-    text-decoration: underline;
-    
+    text-decoration: underline;  
 } 
+
+/*suplementacion deportiva*/
+
+.texto-suplementacion{
+    border: solid black 1px;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+    
+
+.suplemento{
+    display: flex;
+    background: tomato;
+    margin:20px;
+}
+.suplemento img{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+
+}
+.texto-boton{
+    display: flex;
+    flex-direction: column;
+}
+.texto-boton button{
+    width: 30%;
+    margin: 10px auto;
+}
+
+
+.suplemento p{
+    padding: 30px;
+    margin: 10px;
+    border: solid;
+}
