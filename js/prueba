@@ -1,0 +1,37 @@
+//mostrar uso del producto con una tabla
+
+let botonSuplemento = document.getElementById('btn-suplemento');
+let texto = document.getElementById('contenido-producto')
+
+//Guardo el contenido original
+const contenidoOriginal = texto.innerHTML;
+
+botonSuplemento.addEventListener('click', function(){
+    //cambio contenido div por tabla   
+    texto.innerHTML = `
+        <table class="tabla">
+            <caption>Información<span id='cerrar-tabla'>X</span></caption>
+            <thead>
+                <tr>
+                    <th>Suplemento</th>
+                    <th>Modo de uso</th>
+                    <th>Dosis recomendada</th>
+                    <th>Función</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Proteína Whey</td>
+                    <td>Al despertar o después de entrenar</td>
+                    <td>1.8 g por peso corporal</td>
+                    <td>Construcción de masa muscular</td>
+                </tr>
+            </tbody>
+        </table>
+    `;
+    //Agrego el evento al boton cerrar
+    let cerrarTabla = document.getElementById('cerrar-tabla');
+    cerrarTabla.addEventListener('click', function(){
+        texto.innerHTML = contenidoOriginal;
+    })
+});

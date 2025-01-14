@@ -195,7 +195,6 @@ footer p{
 
 .texto-suplementacion{
     border: solid black 1px;
-    margin: 20px;
     padding: 15px;
     font-size: 20px;
 }
@@ -205,25 +204,78 @@ footer p{
     display: flex;
     background: tomato;
     margin:20px;
+    justify-content: space-between;
 }
 .suplemento img{
     width: 50%;
-    height: auto;
-    margin: 10px;
-
+    max-width: 500px;
+    max-height: 400px;
 }
+
 .texto-boton{
     display: flex;
     flex-direction: column;
-}
-.texto-boton button{
-    width: 30%;
-    margin: 10px auto;
-}
+    width: 50%;
+    font-size: 20px;
+    
 
+}
+.boton-suplementos{
+    margin: 10px auto;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(48, 100, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.boton-suplementos:hover{
+    background-color: rgb(57, 228, 23); 
+    transform: scale(1.1);
+}
 
 .suplemento p{
     padding: 30px;
     margin: 10px;
     border: solid;
+}
+
+/*Tablas de informacion suplementacion*/
+.tabla{
+    margin: 0px;
+    border: solid; width:100%; 
+    border-collapse: collapse; 
+    height: 100%;
+}
+.tabla caption{
+    background: #000;
+    color: #fff;
+}
+.tabla span{
+    float: right;
+    margin-right: 15px;
+    color: green;
+    cursor: pointer;
+}
+.tabla span:hover{
+    transform: scale(1.1);
+    color:  rgb(57, 228, 23); 
+
+    
+}
+.tabla tr{
+    background: red;
+}
+.tabla th{
+    border: solid; 
+    width: 25%; 
+    text-align: center;
+}
+.tabla td{
+    border: solid; 
+    text-align: center;
 }
